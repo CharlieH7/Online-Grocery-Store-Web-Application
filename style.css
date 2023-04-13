@@ -474,6 +474,33 @@ section {
   color: var(--orange);
   padding: 0.5rem 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer  {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--orange);
+}
 /* media queries */
 @media (max-width: 991px) {
 
