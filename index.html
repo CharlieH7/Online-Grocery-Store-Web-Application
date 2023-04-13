@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> FreshChoice Grocery</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#frozenFood">Frozen Food</a>
+        <a href="#freshFood">Fresh Food</a>
+        <a href="#beverages">Beverages</a>
+        <a href="#homeHealth">Home-Health</a>
+        <a href="#petFood">Pet Food</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <img src="images/icecream.jpg" alt="">
+            <i class="fas fa-trash"></i>
+            <div class="content">
+                <h3>Ice Cream</h3>
+                <span class="price">$3.50</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/fries.jpg" alt="">
+            <i class="fas fa-trash"></i>
+            <div class="content">
+                <h3>Fries</h3>
+                <span class="price">$3.0</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/mixedberry.jpg" alt="">
+            <i class="fas fa-trash"></i>
+            <div class="content">
+                <h3>Mixed Berry</h3>
+                <span class="price">$4.0</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $19.69/- </div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+</header>
+<!-- Home Section Start-->
+<section class="home" id="home">
+    <div class="content">
+        <h3><span>Fresh</span> and <span>Organic</span> products for you and your family</h3>
+        <p>What are you waiting for click the botton below!!</p>
+        <a href="#frozenFood" class="btn">Shop Now</a>
+    </div>
+</section>
+<!-- Home Section End -->
+
+<!-- Frozen Food Section Start -->
+<section class="frozenFood" id="frozenFood">
+    <h1 class="heading">Frozen Food</h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/icypole.jpg" alt="Juicies Tropical Frozen 10 Pack">
+                <h3>Juicies Frozen</h3>
+                <div class="price">$7.5</div>
+                <div class="quantity">10 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/sausageRoll.jpg" alt="Sausage Roll">
+                <h3>Sausage Roll</h3>
+                <div class="price">$7.0</div>
+                <div class="quantity">6 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/fries.jpg" alt="Frozen Fries">
+                <h3>Fries</h3>
+                <div class="price">$4.5</div>
+                <div class="quantity">1 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/salmon.jpg" alt="Frozen Salmon">
+                <h3>Salmon Skinless</h3>
+                <div class="price">$32.0</div>
+                <div class="quantity">1 kg</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/strawberries.jpg" alt="Frozen Strawberries">
+                <h3>Frozen Strawberries</h3>
+                <div class="price">$6.0</div>
+                <div class="quantity">500g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/vegmix.jpg" alt="Frozen Veg Mix">
+                <h3>Frozen Veg Mix</h3>
+                <div class="price">$3.5</div>
+                <div class="quantity">450g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/chickentenders.jpg" alt="Frozen Chicken Tenders">
+                <h3>Frozen Chicken Tenders</h3>
+                <div class="price">$5.5</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/fish.jpg" alt="Frozen Fish">
+                <h3>Frozen Fish</h3>
+                <div class="price">$10.5</div>
+                <div class="quantity">425g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/porkbuns.jpg" alt="BBQ Pork Buns">
+                <h3>BBQ Pork Buns</h3>
+                <div class="price">$8.0</div>
+                <div class="quantity">300g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/butterchicken.jpg" alt="Butter Chicken Frozen Meal">
+                <h3>Butter Chicken Frozen Meal</h3>
+                <div class="price">$7.5</div>
+                <div class="quantity">480g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Frozen Food Section End -->
+<!-- Fresh Food Section Start -->
+<section class="freshFood" id="freshFood">
+    <h1 class="heading">Fresh Food</h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/sausage.jpg" alt="Beef Sausages">
+                <h3>Beef Sausages</h3>
+                <div class="price">$12.0</div>
+                <div class="quantity">24/1.8kg</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/freshSalmon.jpg" alt="Tassal Smoked Salmon">
+                <h3>Smoked Salmon</h3>
+                <div class="price">$17.0</div>
+                <div class="quantity">250g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/beef.jpg" alt="Beef Rump Steak">
+                <h3>Beef Rump Steak</h3>
+                <div class="price">$8.0</div>
+                <div class="quantity">250g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/salami.jpg" alt="Salami Hungarian Mild">
+                <h3>Salami Hungarian Mild</h3>
+                <div class="price">$7.0</div>
+                <div class="quantity">180g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/skewer.jpg" alt="Marinated Prawn Skewer">
+                <h3>Marinated Prawn Skewer</h3>
+                <div class="price">$1.99</div>
+                <div class="quantity">1 EA</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/beefMince.jpg" alt="Lean Beef Mince">
+                <h3>Lean Beef Mince</h3>
+                <div class="price">$9.5</div>
+                <div class="quantity">500g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/chickenWings.jpg" alt="Chicken Wings">
+                <h3>Chicken Wings </h3>
+                <div class="price">$6.5</div>
+                <div class="quantity">1 KG</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/chicken.jpg" alt="Roast Chicken Whole">
+                <h3>Roast Chicken Whole</h3>
+                <div class="price">$20</div>
+                <div class="quantity">1.9kg - 3.1kg</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/ham.jpg" alt="Ham Off The Bone">
+                <h3>Ham Off The Bone</h3>
+                <div class="price">$5.0</div>
+                <div class="quantity">120g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/cheese.jpg" alt="Shredded Parmesan Cheese">
+                <h3>Shredded Parmesan Cheese</h3>
+                <div class="price">$6.0</div>
+                <div class="quantity">250g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fresh Food Section End --> 
+<!-- Beverages Section Start -->
+<section class="beverages" id="beverages">
+    <h1 class="heading">Beverages</h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/coke.jpg" alt="Coca Cola">
+                <h3>Coca Cola Zero Sugar</h3>
+                <div class="price">$3.99</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/mineralWater.jpg" alt="Natural Mineral Water">
+                <h3>Natural Mineral Water</h3>
+                <div class="price">$3.25</div>
+                <div class="quantity">750ml</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/lemonade.jpg" alt="Lemonade Bottle">
+                <h3>Lemonade Bottle</h3>
+                <div class="price">$1.10</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/kirks.jpg" alt="Kirks Pasito Bottle">
+                <h3>Kirks Pasito Bottle</h3>
+                <div class="price">$1.75</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/sprite.jpg" alt="Sprite Bottle">
+                <h3>Sprite Bottle</h3>
+                <div class="price">$3.99</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/fanta.jpg" alt="Fanta Bottle">
+                <h3>Fanta Bottle</h3>
+                <div class="price">$3.99</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/mountaindew.jpg" alt="Mountain Dew Bottle">
+                <h3>Mountain Dew Bottle</h3>
+                <div class="price">$2.70</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/solo.jpg" alt="Solo Lemon Bottle">
+                <h3>Solo Lemon Bottle</h3>
+                <div class="price">$2.70</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/schweppesRaspberry.jpg" alt="Schweppes Raspberry">
+                <h3>Schweppes Raspberry</h3>
+                <div class="price">$2.80</div>
+                <div class="quantity">1.1l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/greenTea.jpg" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <div class="price">$2.25</div>
+                <div class="quantity">500ml</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Beverages Section End -->
+<!-- Home-Health Food Section Start -->
+<section class="frozenFood" id="frozenFood">
+    <h1 class="heading">Beverages</h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/vitamin.jpg" alt="Coca Cola">
+                <h3>Coca Cola Zero Sugar</h3>
+                <div class="price">$3.99</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/sausageRoll.jpg" alt="Sausage Roll">
+                <h3>Sausage Roll</h3>
+                <div class="price">$7.0</div>
+                <div class="quantity">6 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/fries.jpg" alt="Frozen Fries">
+                <h3>Fries</h3>
+                <div class="price">$4.5</div>
+                <div class="quantity">1 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/salmon.jpg" alt="Frozen Salmon">
+                <h3>Salmon Skinless</h3>
+                <div class="price">$32.0</div>
+                <div class="quantity">1 kg</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/strawberries.jpg" alt="Frozen Strawberries">
+                <h3>Frozen Strawberries</h3>
+                <div class="price">$6.0</div>
+                <div class="quantity">500g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/vegmix.jpg" alt="Frozen Veg Mix">
+                <h3>Frozen Veg Mix</h3>
+                <div class="price">$3.5</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/chickentenders.jpg" alt="Frozen Chicken Tenders">
+                <h3>Frozen Chicken Tenders</h3>
+                <div class="price">$5.5</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/fish.jpg" alt="Frozen Fish">
+                <h3>Frozen Fish</h3>
+                <div class="price">$10.5</div>
+                <div class="quantity">425g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/porkbuns.jpg" alt="BBQ Pork Buns">
+                <h3>BBQ Pork Buns</h3>
+                <div class="price">$8.0</div>
+                <div class="quantity">300g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/butterchicken.jpg" alt="Butter Chicken Frozen Meal">
+                <h3>Butter Chicken Frozen Meal</h3>
+                <div class="price">$7.5</div>
+                <div class="quantity">480g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home-Health Food Section End -->
+<!-- Pet Food Section Start -->
+<section class="frozenFood" id="frozenFood">
+    <h1 class="heading">Beverages</h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/coke.jpg" alt="Coca Cola">
+                <h3>Coca Cola Zero Sugar</h3>
+                <div class="price">$3.99</div>
+                <div class="quantity">1.25l</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/sausageRoll.jpg" alt="Sausage Roll">
+                <h3>Sausage Roll</h3>
+                <div class="price">$7.0</div>
+                <div class="quantity">6 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/fries.jpg" alt="Frozen Fries">
+                <h3>Fries</h3>
+                <div class="price">$4.5</div>
+                <div class="quantity">1 Pack</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/salmon.jpg" alt="Frozen Salmon">
+                <h3>Salmon Skinless</h3>
+                <div class="price">$32.0</div>
+                <div class="quantity">1 kg</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/strawberries.jpg" alt="Frozen Strawberries">
+                <h3>Frozen Strawberries</h3>
+                <div class="price">$6.0</div>
+                <div class="quantity">500g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./images/vegmix.jpg" alt="Frozen Veg Mix">
+                <h3>Frozen Veg Mix</h3>
+                <div class="price">$3.5</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/chickentenders.jpg" alt="Frozen Chicken Tenders">
+                <h3>Frozen Chicken Tenders</h3>
+                <div class="price">$5.5</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/fish.jpg" alt="Frozen Fish">
+                <h3>Frozen Fish</h3>
+                <div class="price">$10.5</div>
+                <div class="quantity">425g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/porkbuns.jpg" alt="BBQ Pork Buns">
+                <h3>BBQ Pork Buns</h3>
+                <div class="price">$8.0</div>
+                <div class="quantity">300g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./images/butterchicken.jpg" alt="Butter Chicken Frozen Meal">
+                <h3>Butter Chicken Frozen Meal</h3>
+                <div class="price">$7.5</div>
+                <div class="quantity">480g</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pet Food Section End -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

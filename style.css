@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
+}
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+}
+
+body {
+  background: #eee;
+}
+
+a {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i {
+  color: var(--orange);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover {
+  color: var(--orange);
+}
+
+.header .icons div {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  text-align: center;
+}
+
+.header .icons div:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header .search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  max-width: 80rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active {
+  right: 2rem;
+  transition: .4s linear;
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+}
+
+.header .search-form label {
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .search-form label:hover {
+  color: var(--orange);
+}
+
+.header .shopping-cart {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: ver(--box-shadow);
+  width: 35rem;
+  background: #fff;
+}
+
+.header .shopping-cart.active {
+  right: 2rem;
+  transition: .4s linear;
+}
+
+.header .shopping-cart .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {
+  height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  cursor: pointer;
+  color: var(--light-color);
+  transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+  color: var(--orange);
+}
+
+.header .shopping-cart .box .content h3 {
+  color: var(--black);
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.header .shopping-cart .box .content .quantity {
+  padding-left: 1rem;
+}
+
+.header .shopping-cart .total {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--black);
+}
+
+.header .shopping-cart .btn {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background: url(./images/grocery-store-web-banner.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+}
+
+.home .content h3 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.home .content h3 span {
+  color: var(--orange);
+}
+
+.home .content p {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+}
+
+/* frozenFood */
+.frozenFood .product-slider {
+  padding: 1rem;
+}
+
+.frozenFood .product-slider:first-child {
+  margin-bottom: 2rem;
+}
+
+.frozenFood .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
+
+.frozenFood .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.frozenFood .product-slider .box img {
+  height: 17rem;
+}
+
+.frozenFood .product-slider .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.frozenFood .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.frozenFood .product-slider .box .quantity {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.frozenFood .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
+
+/* freshFood */
+.freshFood .product-slider {
+  padding: 1rem;
+}
+
+.freshFood .product-slider:first-child {
+  margin-bottom: 2rem;
+}
+
+.freshFood .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
+
+.freshFood .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.freshFood .product-slider .box img {
+  height: 17rem;
+}
+
+.freshFood .product-slider .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.freshFood .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.freshFood .product-slider .box .quantity {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.freshFood .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
+
+/* beverages */
+.beverages .product-slider {
+  padding: 1rem;
+}
+
+.beverages .product-slider:first-child {
+  margin-bottom: 2rem;
+}
+
+.beverages .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
+
+.beverages .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.beverages .product-slider .box img {
+  height: 17rem;
+}
+
+.beverages .product-slider .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.beverages .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.beverages .product-slider .box .quantity {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.beverages .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .search-form {
+    width: 90%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
