@@ -10,9 +10,8 @@
   --outline-hover: 0.2rem solid var(--black);
 }
 
-
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,7 +26,6 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
-
 }
 
 body {
@@ -131,7 +129,7 @@ section {
 
 .header .search-form.active {
   right: 2rem;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 
 .header .search-form input {
@@ -168,7 +166,7 @@ section {
 
 .header .shopping-cart.active {
   right: 2rem;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 
 .header .shopping-cart .box {
@@ -475,24 +473,60 @@ section {
   padding: 0.5rem 0;
 }
 
+/* Pet food */
+.petFood .product-slider {
+  padding: 1rem;
+}
 
+.petFood .product-slider:first-child {
+  margin-bottom: 2rem;
+}
 
+.petFood .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
 
+.petFood .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
 
+.petFood .product-slider .box img {
+  height: 17rem;
+}
 
+.petFood .product-slider .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
 
+.petFood .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
 
+.petFood .product-slider .box .quantity {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
 
+.petFood .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
 
-
-
-
-
-
-
-
-
-.footer  {
+.footer {
   font-size: 2rem;
   color: var(--black);
   padding: 1rem 0;
@@ -503,7 +537,6 @@ section {
 }
 /* media queries */
 @media (max-width: 991px) {
-
   html {
     font-size: 55%;
   }
@@ -518,7 +551,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
   #menu-btn {
     display: inline-block;
   }
@@ -539,7 +571,7 @@ section {
 
   .header .navbar.active {
     right: 2rem;
-    transition: .4s linear;
+    transition: 0.4s linear;
   }
 
   header .navbar a {
@@ -550,7 +582,6 @@ section {
 }
 
 @media (max-width: 450px) {
-
   html {
     font-size: 50%;
   }
@@ -558,37 +589,4 @@ section {
   .heading {
     font-size: 2.5rem;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
