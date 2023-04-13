@@ -422,6 +422,58 @@ section {
   padding: 0.5rem 0;
 }
 
+/* home-health food */
+.homeHealth .product-slider {
+  padding: 1rem;
+}
+
+.homeHealth .product-slider:first-child {
+  margin-bottom: 2rem;
+}
+
+.homeHealth .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
+
+.homeHealth .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.homeHealth .product-slider .box img {
+  height: 17rem;
+}
+
+.homeHealth .product-slider .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.homeHealth .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.homeHealth .product-slider .box .quantity {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.homeHealth .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
 /* media queries */
 @media (max-width: 991px) {
 
