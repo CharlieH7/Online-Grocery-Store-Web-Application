@@ -194,24 +194,7 @@ button:hover {
   gap: 1rem;
   position: relative;
   margin: 1rem 0;
-}
-
-.header .shopping-cart .box img {
-  height: 10rem;
-}
-
-.header .shopping-cart .box .fa-trash {
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  right: 2rem;
-  cursor: pointer;
-  color: var(--light-color);
-  transform: translateY(-50%);
-}
-
-.header .shopping-cart .box .fa-trash:hover {
-  color: var(--orange);
+  font-size: 20px;
 }
 
 .header .shopping-cart .box .content h3 {
@@ -247,7 +230,13 @@ button:hover {
   height: 100px;
 }
 
-
+.remove-item {
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: var(--orange);
+  cursor: pointer;
+}
 .home {
   display: flex;
   align-items: center;
