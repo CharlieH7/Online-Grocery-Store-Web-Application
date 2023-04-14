@@ -64,7 +64,7 @@ function updateCartTotal() {
 
 // update the cart total
 var cartTotal = cart.querySelector(".cart-total");
-cartTotal.innerText = "$" + total.toFixed(2);
+cartTotal.innerText = "Total: $" + total.toFixed(2);
 }
 
 

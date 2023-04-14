@@ -47,3 +47,21 @@ var swiper = new Swiper(".product-slider", {
   },
 });
 
+// search function
+function searchItems() {
+  const input = document.getElementById("search-box");
+  const filter = input.value.toUpperCase();
+  const items = document.querySelectorAll(".swiper-slide");
+
+  items.forEach((item) => {
+    const name = item.querySelector("h3").textContent.toUpperCase();
+    if (name.includes(filter)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+document.getElementById("search-box").addEventListener("keyup", searchItems);
+

@@ -230,13 +230,24 @@ button:hover {
   height: 100px;
 }
 
+.shopping-cart .cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
 .remove-item {
   top: 0;
   right: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--orange);
   cursor: pointer;
 }
+
 .home {
   display: flex;
   align-items: center;
