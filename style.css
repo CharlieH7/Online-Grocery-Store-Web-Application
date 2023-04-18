@@ -135,7 +135,7 @@ button:hover {
   top: 110%;
   right: -110%;
   max-width: 80rem;
-  height: 5rem;
+  height: 8rem;
   background: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -156,7 +156,6 @@ button:hover {
   text-transform: none;
   font-size: 1.6rem;
   color: var(--black);
-  padding: 0 1.5rem;
 }
 
 .header .search-form label {
@@ -169,6 +168,16 @@ button:hover {
 .header .search-form label:hover {
   color: var(--orange);
 }
+
+.search-form {
+  display: flex;
+}
+
+.fa-search {
+  margin-left: auto;
+  align-items: center;
+}
+
 
 .header .shopping-cart {
   position: absolute;
@@ -659,18 +668,18 @@ input[type="email"]:focus {
 }
 
 button[type="submit"] {
-  background-color: #6ab0de;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 15px;
+  background: #5b92c5;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: #5b92c5;
+  background-color: #ff5361;
 }
 
 /* Style the form headings */
