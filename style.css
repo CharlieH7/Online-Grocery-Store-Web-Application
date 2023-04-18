@@ -248,6 +248,12 @@ button:hover {
   cursor: pointer;
 }
 
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
 .home {
   display: flex;
   align-items: center;
@@ -613,5 +619,76 @@ button:hover {
 
   .heading {
     font-size: 2.5rem;
+  }
+}
+
+/* Online order form style */
+/* Set some basic styles for the form and its elements */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #6ab0de;
+}
+
+button[type="submit"] {
+  background-color: #6ab0de;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #5b92c5;
+}
+
+/* Style the form headings */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #6ab0de;
+}
+
+/* Style form inputs and labels on smaller screens */
+@media screen and (max-width: 600px) {
+  label,
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    margin-bottom: 10px;
+    font-size: 14px;
   }
 }

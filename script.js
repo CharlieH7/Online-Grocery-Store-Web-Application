@@ -65,3 +65,4 @@ function searchItems() {
 
 document.getElementById("search-box").addEventListener("keyup", searchItems);
 
+
