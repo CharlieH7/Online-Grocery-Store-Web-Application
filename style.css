@@ -680,6 +680,9 @@ button[type="submit"]:hover {
   background-color: #ff5361;
 }
 
+.cancel-btn {
+  background: #fff;
+}
 /* Style the form headings */
 h1 {
   text-align: center;
