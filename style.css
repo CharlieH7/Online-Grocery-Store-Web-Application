@@ -178,7 +178,6 @@ button:hover {
   align-items: center;
 }
 
-
 .header .shopping-cart {
   position: absolute;
   top: 110%;
@@ -261,7 +260,6 @@ button:hover {
   opacity: 0.5;
   pointer-events: none;
 }
-
 
 .home {
   display: flex;

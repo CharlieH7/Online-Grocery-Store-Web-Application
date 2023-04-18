@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<header class="header">
-    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> FreshChoice Grocery</a>
-    <nav class="navbar">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-shopping-basket"></i> FreshChoice Grocery</a
+      >
+      <nav class="navbar">
         <a href="#home">home</a>
         <a href="./products.html#frozenFood">Frozen Food</a>
         <a href="./products.html#freshFood">Fresh Food</a>
         <a href="./products.html#beverages">Beverages</a>
         <a href="./products.html#homeHealth">Home-Health</a>
         <a href="./products.html#petFood">Pet Food</a>
-    </nav>
+      </nav>
 
-    <div class="icons">
+      <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
         <div class="fas fa-shopping-cart" id="cart-btn"></div>
-    </div>
+      </div>
 
-    <form action="" class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
         <label for="search-box" class="fas fa-search"></label>
-    </form>
+      </form>
 
-    <div class="shopping-cart">
-        <div class="box">Shopping Cart</div><hr/>
-            <div id="title"></div>
-            <div class="cart-total">Total (0 items): $0.00</div> 
+      <div class="shopping-cart">
+        <div class="box">Shopping Cart</div>
+        <hr />
+        <div id="title"></div>
+        <div class="cart-total">Total (0 items): $0.00</div>
         <a href="./checkout.html" class="btn" id="checkout-btn">Checkout</a>
-    </div>
-</header>
-<!-- Home Section Starts-->
-<section class="home" id="home">
-    <div class="content">
-        <h3><span>Fresh</span> and <span>Organic</span> products for you and your family</h3>
+      </div>
+    </header>
+    <!-- Home Section Starts-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>
+          <span>Fresh</span> and <span>Organic</span> products for you and your
+          family
+        </h3>
         <p>Click the botton below to get started shopping!!</p>
         <a href="./products.html" class="btn">Shop Now</a>
-    </div>
-</section>
-<!-- Home Section Ends -->
+      </div>
+    </section>
+    <!-- Home Section Ends -->
 
-<!-- Footer Section Starts -->
-<section class="footer">
-    <div class="box-container">
+    <!-- Footer Section Starts -->
+    <section class="footer">
+      <div class="box-container">
         <div class="box">
-            <h3> Created by Charlie Huang (14247845) | UTS 31748 Programming on the Internet | All Right Reserved</h3>
+          <h3>
+            Created by Charlie Huang (14247845) | UTS 31748 Programming on the
+            Internet | All Right Reserved
+          </h3>
         </div>
-    </div>
-</section>
-<!-- Footer Section Ends -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="./script.js"></script>
-<script src="./addToCart.js"></script>
-</body>
+      </div>
+    </section>
+    <!-- Footer Section Ends -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./addToCart.js"></script>
+  </body>
 </html>

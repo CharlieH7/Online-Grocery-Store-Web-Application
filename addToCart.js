@@ -1,5 +1,3 @@
-
-
 function addToCart(item) {
   // get the item details
   var itemImage = item.querySelector("img").src;
@@ -34,7 +32,9 @@ function addToCart(item) {
       <img src="${itemImage}" alt="${itemName}">
       <div class="cart-item-details">
         <h4>${itemName}</h4>
-        <p data-price="${parseFloat(itemPrice.replace("$", ""))}">${itemPrice}</p>
+        <p data-price="${parseFloat(
+          itemPrice.replace("$", "")
+        )}">${itemPrice}</p>
       </div>
       <span>Quantity: </span><span class="cart-item-quantity">1</span>
       <br/>
@@ -45,10 +45,12 @@ function addToCart(item) {
     var cartItemsContainer = cart.querySelector("#title");
     cartItemsContainer.appendChild(cartItem);
 
-    cartItem.querySelector(".remove-item").addEventListener("click", function () {
-      cartItem.remove();
-      updateCartTotal();
-    });
+    cartItem
+      .querySelector(".remove-item")
+      .addEventListener("click", function () {
+        cartItem.remove();
+        updateCartTotal();
+      });
 
     // update the cart total
     updateCartTotal();
@@ -65,7 +67,9 @@ function updateCartTotal() {
   for (var i = 0; i < cartItems.length; i++) {
     var itemPriceElement = cartItems[i].querySelector(".cart-item-details p");
     var itemPrice = parseFloat(itemPriceElement.dataset.price);
-    var itemQuantity = parseInt(cartItems[i].querySelector(".cart-item-quantity").innerText);
+    var itemQuantity = parseInt(
+      cartItems[i].querySelector(".cart-item-quantity").innerText
+    );
     total += itemPrice * itemQuantity;
     quantity += itemQuantity;
   }
@@ -75,38 +79,37 @@ function updateCartTotal() {
   cartTotal.innerText = "Total (" + quantity + " items): $" + total.toFixed(2);
 
   // update the checkout button status
-  const checkoutBtn = document.getElementById('checkout-btn');
+  const checkoutBtn = document.getElementById("checkout-btn");
   if (total === 0) {
-    checkoutBtn.classList.add('disabled');
-    checkoutBtn.onclick = function(event) {
+    checkoutBtn.classList.add("disabled");
+    checkoutBtn.onclick = function (event) {
       event.preventDefault();
-      alert('Your shopping cart is empty!');
-    }
+      alert("Your shopping cart is empty!");
+    };
   } else {
-    checkoutBtn.classList.remove('disabled');
-    checkoutBtn.onclick = function() {
+    checkoutBtn.classList.remove("disabled");
+    checkoutBtn.onclick = function () {
       // Allow user to proceed to checkout
-    }
+    };
   }
 }
 
-
 // chekkout button grey out
-const checkoutBtn = document.getElementById('checkout-btn');
-const cartTotal = document.querySelector('.cart-total');
+const checkoutBtn = document.getElementById("checkout-btn");
+const cartTotal = document.querySelector(".cart-total");
 
 // Check if cart total is $0.00
-if (cartTotal.innerText === 'Total (0 items): $0.00') {
+if (cartTotal.innerText === "Total (0 items): $0.00") {
   // Disable checkout button
-  checkoutBtn.classList.add('disabled');
-  checkoutBtn.onclick = function(event) {
+  checkoutBtn.classList.add("disabled");
+  checkoutBtn.onclick = function (event) {
     event.preventDefault();
-    alert('Your shopping cart is empty!');
-  }
+    alert("Your shopping cart is empty!");
+  };
 } else {
   // Enable checkout button
-  checkoutBtn.classList.remove('disabled');
-  checkoutBtn.onclick = function() {
+  checkoutBtn.classList.remove("disabled");
+  checkoutBtn.onclick = function () {
     // Allow user to proceed to checkout
-  }
+  };
 }
