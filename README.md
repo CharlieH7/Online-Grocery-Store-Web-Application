@@ -1,6 +1,6 @@
 <h1>31748 Programming on the Internet - Autumn 2023 Assignment 1</h1>
 
-<img src="https://github.com/saku-1101/Online-GroceryStore-WebApp/blob/main/frontend/src/assets/StoreLogo-removebg.png?raw=true" width="200px">
+<img src="images/Store Logo.png?raw=true" width="200px">
 
 <img src="https://img.shields.io/badge/-React-555.svg?logo=react&style=flat"> <img src="https://shields.io/badge/MySQL-lightgrey?logo=mysql&style=plastic&logoColor=white&labelColor=blue"> <img src="https://img.shields.io/badge/PHP-ccc.svg?logo=php&style=flat">　<img src="https://img.shields.io/badge/Javascript-276DC3.svg?logo=javascript&style=flat">　<img src="https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat">　<img src="https://img.shields.io/badge/-CSS3-1572B6.svg?logo=css3&style=flat">　<img src="https://img.shields.io/badge/-HTML5-333.svg?logo=html5&style=flat">　<img src="https://img.shields.io/badge/-Nginx-bfcfcf.svg?logo=nginx&style=flat">　<img src="https://img.shields.io/badge/-Docker-EEE.svg?logo=docker&style=flat">
 
