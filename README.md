@@ -29,7 +29,7 @@ or
 1. Download and Unzip the file on your local system copy Online-Grocery-Store-Web-Application.
 2. Put Online-Grocery-Store-Web-Application folder inside root directory (for xampp xampp/htdocs, for wamp wamp/www, for lamp var/www/html)
 
-access to (http://localhost/Online-Grocery-Store-Web-Application)😍
+access to ([http://localhost/Online-Grocery-Store-Web-Application](http://assignment1grocery-env.eba-cyptb8h8.us-east-1.elasticbeanstalk.com/index.html))😍
 
 ## Features
 
